@@ -14,7 +14,9 @@ class Blog extends Component {
     componentDidMount() {
         axios
             .get("https://jsonplaceholder.typicode.com/posts")
-            .then(response => this.setState({ posts: response.data }));
+            .then(response => {
+                this.setState({ posts: response.data });
+            });
     }
 
     render() {
