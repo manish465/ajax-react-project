@@ -26,7 +26,6 @@ class Blog extends Component {
 
     postClicked = id => {
         this.setState({ selectedPostId: id });
-        console.log(this.state.selectedPostId);
     };
 
     render() {
